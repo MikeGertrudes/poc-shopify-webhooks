@@ -14,7 +14,7 @@ import {
 import shopifyShopDomainValidator from './shopify-shop-domain-validator';
 import shopifyWebhookTopicValidator from './shopify-webhook-topic-validator';
 import shopifyWebhookSecretValidator from './shopify-webhook-secret-validator';
-import shopifyOrdersCreateWebhookHandler from './handler';
+import shopifyOrdersCreateWebhookHandler from './handler-put-message-on-sqs';
 import errorHandler from './error-handler';
 
 const app = express();

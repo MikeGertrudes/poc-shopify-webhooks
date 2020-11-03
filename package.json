@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/cors": "^2.8.8",
+    "aws-sdk": "^2.784.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^4.0.0",
