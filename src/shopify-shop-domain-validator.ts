@@ -1,9 +1,10 @@
 import express from 'express';
-const {
-  SHOPIFY_SHOP_DOMAIN,
-} = require('./constants');
 
-export default function(req: express.Request, res: express.Response, next: express.NextFunction): void {
+import {
+  SHOPIFY_SHOP_DOMAIN,
+} from './constants';
+
+export default function(req: express.Request, _res: express.Response, next: express.NextFunction): void {
   const shop = req.header('X-Shopify-Shop-Domain');
 
   if (shop !== SHOPIFY_SHOP_DOMAIN) {

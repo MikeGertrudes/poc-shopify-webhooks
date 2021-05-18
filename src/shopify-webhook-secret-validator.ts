@@ -1,10 +1,11 @@
 import express from 'express';
 import crypto from 'crypto';
+
 import {
   SHOPIFY_WEBHOOK_SECRET,
 } from './constants';
 
-export default function(req: express.Request, res: express.Response, next: express.NextFunction): void {
+export default function(req: express.Request, _res: express.Response, next: express.NextFunction): void {
   const hmac = req.header('X-Shopify-Hmac-Sha256');
 
   const signature = crypto
